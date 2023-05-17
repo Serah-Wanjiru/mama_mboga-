@@ -75,8 +75,9 @@ class DeliveryService:
         self.delivery_charges = delivery_charges
     
     def partner_with_service_provider(self, service_provider):
+
         # //Partner with service provider
-        pass
+        return
     
     def set_delivery_areas(self, delivery_areas):
         #//Set delivery zones
@@ -97,14 +98,17 @@ class Inventory:
     
     def new_stock_levels(self,new_product):
         self.product_name=new_product
+        return new_product
         
     
     def Quantity_products(self,new_quantity):
         self.quantity=new_quantity
+        return new_quantity
        
     
     def pricing(self, new_price):
         self.price=new_price
+        return new_price
        
     
     def update_action(self,needed_action):
@@ -115,14 +119,19 @@ class Add_item:
     def __init__(self,name,quantity,price):
         self.name=name
         self.quantity=quantity
+        
         self.price=price
+    
     def item_name(self,p_name):
         self.name=p_name 
+        return p_name
         
     def item_quantity(self,n_quantity):
         self.quantity=n_quantity
+        return n_quantity
     def item_price(self,n_price):
         self.price=n_price 
+        return n_price
     def __str__(self):
         return f"{self.name},{self.quantity},{self.price}" 
       
